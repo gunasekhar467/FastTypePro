@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CDDC39"
+        android:backgroundTint="#CDDC39"
+        android:fontFamily="@font/anonymous_pro"
+        android:text="SIGN UP"
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textSize="30sp"
+        android:textStyle="normal" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/uname"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textColor="#ff00"
+        android:hint="Enter user id"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/passwd"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textColor="#ff00"
+        android:hint="Enter password"
+        android:inputType="textPassword"
+        />
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF5722"
+        android:backgroundTint="#FF5722"
+        android:onClick="signup"
+        android:text="SIGNup"
+        android:textColor="#F6F5ED"
+        android:textSize="20sp" />
+</LinearLayout>

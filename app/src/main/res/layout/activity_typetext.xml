@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".typetext">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DAE2B6"
+        android:fontFamily="@font/anonymous_pro"
+        android:text="Typing check"
+        android:textAlignment="center"
+        android:textColor="#1A4D2E"
+        android:textSize="30sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/anonymous_pro"
+        android:text="Start typing the text displayed below(ignore the quotes). Press start when you are ready. Press stop on completion."
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textSize="20sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/anonymous_pro"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textSize="30sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFEB3B"
+        android:fontFamily="@font/anonymous_pro"
+        android:text="'The Quick Brown Fox Jumps Over The Lazy Dog'"
+        android:textAlignment="center"
+        android:textColor="#B9BD36A0"
+        android:textSize="20sp"
+        android:textStyle="normal" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/anonymous_pro"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textSize="30sp"
+        android:textStyle="normal" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type here"
+        android:textAlignment="center"
+        android:id="@+id/type_text" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/anonymous_pro"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textSize="30sp"
+        android:textStyle="normal" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="start"
+            android:text="START"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/anonymous_pro"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#3F51B5"
+            android:textSize="30sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="stop"
+            android:text="STOP"
+            android:textAlignment="center" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/anonymous_pro"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textSize="30sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/anonymous_pro"
+        android:text=""
+        android:id="@+id/res"
+        android:textAlignment="center"
+        android:textColor="#319DA0"
+        android:textSize="25sp"
+        android:textStyle="normal" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/anonymous_pro"
+        android:text=""
+        android:id="@+id/res1"
+        android:textAlignment="center"
+        android:textColor="#319DA0"
+        android:textSize="25sp"
+        android:textStyle="normal" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/anonymous_pro"
+        android:text=""
+        android:id="@+id/res2"
+        android:textAlignment="center"
+        android:textColor="#319DA0"
+        android:textSize="25sp"
+        android:textStyle="normal" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/anonymous_pro"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#319DA0"
+        android:textSize="25sp"
+        android:textStyle="normal" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/anonymous_pro"
+        android:text=""
+        android:id="@+id/cha"
+        android:textAlignment="center"
+        android:textColor="#319DA0"
+        android:textSize="25sp"
+        android:textStyle="normal" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/anonymous_pro"
+        android:text=""
+        android:id="@+id/wor"
+        android:textAlignment="center"
+        android:textColor="#319DA0"
+        android:textSize="25sp"
+        android:textStyle="normal" />
+
+</LinearLayout>
