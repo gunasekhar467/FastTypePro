@@ -1,13 +1,12 @@
-package com.example.pr1;
+package com.example.myapplication;
 
-import androidx.appcompat.app.AppCompatActivity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
-import java.util.*;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 
 public class typetext extends AppCompatActivity {
     TextView result,result1,result2,character,word;
@@ -42,8 +41,8 @@ public class typetext extends AppCompatActivity {
         String msg1 = "You have a good typing speed, welldone!!";
         String msg2 = "Well you have a average typing speed,which is good. You can still improve your typing speed by using keyboard.com, Goodluck!!";
         String msg3 = "Your typing speed is poor. You can increase your typing skills by using keyboard.com, Goodluck!!";
-        String typingtext = "";
-        if (text.getText().toString() == typingtext) {
+        String typingtext = "The Quick Brown Fox Jumps Over The Lazy Dog";
+        if (text.getText().toString().equals(typingtext)) {
             result.setText("Great! You have correctly typed the above message.");
             result1.setText("Your typing speed is" + speed + "sec");
             if (speed <= 15) {
@@ -58,8 +57,8 @@ public class typetext extends AppCompatActivity {
             character.setText("By your typing speed it is known that you type " + CharctersMin + " characters per minute.");
             word.setText("You type " + WordsMin + " words per minute");
         }
-        if (typingtext != text.getText().toString()) {
-            result.setText(text.getText().toString());//"You have incorrectly typed the above displayed sentence. Please retry by pressing the start button.");
+        if (!typingtext.equals( text.getText().toString())) {
+            result.setText("You have incorrectly typed the above displayed sentence. Please retry by pressing the start button.");
         }
     }
 
